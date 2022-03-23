@@ -1,0 +1,22 @@
+/* .container{
+   width: 50%;
+   margin: 0 auto;
+} */
+
+
+.btnStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+p{
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.file-input {
+    display: none;
+  }

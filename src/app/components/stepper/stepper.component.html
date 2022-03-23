@@ -1,0 +1,28 @@
+
+<mat-stepper  #stepper>
+  <mat-step>
+    <ng-template matStepLabel>Personal Information</ng-template>
+    <app-personal-form></app-personal-form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Educational Qualification</ng-template>
+      <app-qualification-form></app-qualification-form>
+  </mat-step>
+ 
+  <mat-step>
+    <ng-template matStepLabel>Employment Details</ng-template>
+    <app-employment-form></app-employment-form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Other Details</ng-template>
+    <app-other-form></app-other-form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Declaration</ng-template>
+    <app-declaration-form></app-declaration-form>
+  </mat-step>
+
+</mat-stepper>
