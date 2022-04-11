@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    LandingPageComponent,
 
   ],
   imports: [
