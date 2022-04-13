@@ -1,3 +1,4 @@
+@import url('../../../../styles.css');
 .sidenav-container {
   position: absolute;
   top: 0;
@@ -27,25 +28,7 @@ left: 85%;
     flex-direction: column;
     padding-bottom: 5px;
   }
-  
-.admin-profile{
-    align-items: center;
-    display: flex;
-    color: white;
-    flex-direction: column;
-}
-.admin-profile img{
-    width: 42%;
-  }
-.admin-profile h4{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0;;
-}
-.admin-profile p{
-padding-top: 0;
-font-weight: 500;
-}
+
 .nav {
     margin-top: 20px;
     display: block;
@@ -125,4 +108,8 @@ font-weight: 500;
 }.menu{
      font-size: 2rem;
     color: #014868;
+}
+mat-sidenav-content{
+  background-color: #f6f7f9;
+  
 }
