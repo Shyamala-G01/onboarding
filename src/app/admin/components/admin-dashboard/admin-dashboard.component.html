@@ -1,0 +1,61 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav [mode]="mode" [opened]="openSidenav" class="side-nav">
+      
+      <div class="sidebar-wraper">
+          <mat-icon  (click)="sidenav.toggle()"
+        (click)="isSidenavShown()"
+          class="white-icon close"
+         >close</mat-icon>
+          <div class="admin-profile">
+        <img
+          src="../../../../assets/images/account_circle.svg"
+          alt=""
+          srcset=""
+        />
+        <h4>Alex</h4>
+        <p>Human resource</p>
+      </div>
+
+      <ul class="nav">
+        <li class="nav-item" routerLink="addAdmin" routerLinkActive="active">
+          <a class="nav-link">
+            <mat-icon class="lists">library_add</mat-icon>
+            <p>Register New Admin</p>
+          </a>
+        </li>
+        <li class="nav-item" routerLink="addEmployee" [routerLinkActive]="['active']">
+          <a class="nav-link">
+            <mat-icon class="lists">library_add</mat-icon>
+            <p>Register New Employee</p>
+          </a>
+        </li>
+        <li class="nav-item" routerLink="viewEmployee" [routerLinkActive]="['active']">
+          <a class="nav-link">
+            <mat-icon class="lists">content_paste</mat-icon>
+            <p>New Employee List</p>
+          </a>
+        </li>
+      </ul>
+      <button class="btn btn-blue">Log out</button>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+   
+    <div class="header">
+      <button
+      *ngIf="!sideNavShown"
+        mat-icon-button
+        color="primary"
+        (click)="sidenav.toggle()"
+        (click)="isSidenavShown()"
+        style="margin-left:2rem;"
+      >
+        <mat-icon class="menu">menu</mat-icon>
+      </button>
+      
+      <img src="../../../../assets/images/logo.png" alt="" srcset="" class="logo">
+    </div>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
