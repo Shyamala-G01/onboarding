@@ -9,6 +9,12 @@ import { EmploymentDetailsComponent } from './components/employment-details/empl
 import { OtherDetailsComponent } from './components/other-details/other-details.component';
 import { DeclarationComponent } from './components/declaration/declaration.component';
 import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
+import { DialogComponent } from './components/dialog10/dialog.component';
+import { Dialog12Component } from './components/dialog12/dialog12.component';
+import { DialogUGComponent } from './components/dialog-ug/dialog-ug.component';
+import { DialogPGComponent } from './components/dialog-pg/dialog-pg.component';
+import { DialogOrgComponent } from './components/dialog-org/dialog-org.component';
+import { HeaderComponent } from '../layout-components/header/header.component';
 
 
 
@@ -20,6 +26,12 @@ import { PersonalInformationComponent } from './components/personal-information/
     OtherDetailsComponent,
     DeclarationComponent,
     PersonalInformationComponent,
+    DialogComponent,
+    Dialog12Component,
+    DialogUGComponent,
+    DialogPGComponent,
+    DialogOrgComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,

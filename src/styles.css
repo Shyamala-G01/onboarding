@@ -1,11 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
-<<<<<<< HEAD
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding: 0; }
 
-=======
 /* 
 normal  font-size: .9rem;
 Heading font-size: 1.563rem;
@@ -14,9 +12,6 @@ secondary color #014868;
 tertiary color 
 backgrd colr #f6f7f9
 */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* btn gradient */
 .button-gradient {
@@ -58,4 +53,31 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     height: auto;
   }
   
->>>>>>> 9acca5da4a0b34896cde3c04ef6773fff8198773
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-grp{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary{
+  background-image: linear-gradient(to right, #ff934f, #fb7d2e);
+  color: #FDFCFC;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-secondary{
+  background-image: linear-gradient(to right, #074d6d, #014868);
+  color: #FDFCFC;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}

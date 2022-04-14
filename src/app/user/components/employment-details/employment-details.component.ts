@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DialogOrgComponent } from '../dialog-org/dialog-org.component';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-employment-details',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employment-details.component.css']
 })
 export class EmploymentDetailsComponent implements OnInit {
-
-  constructor() { }
+ 
+  
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+
+  openDialog() {
+    const dialogStyle = {
+      height: '90%',
+      width: '30%',
+    };
+  
+        this.dialog.open(DialogOrgComponent, dialogStyle);
+     
+  }
 }
