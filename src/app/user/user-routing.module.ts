@@ -7,7 +7,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { OtherDetailsComponent } from './components/other-details/other-details.component';
 import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 
-console.log("User Module is lazy Loaded!!!")
+
 const routes: Routes = [
   { path : '',component:LandingPageComponent,
    children:[
@@ -15,7 +15,7 @@ const routes: Routes = [
      {path:'educational-qualification',component:EducationalQualificationComponent},
      {path:'employment-details',component:EmploymentDetailsComponent},
      {path:'other-details', component:OtherDetailsComponent},
-     {path :'decalartion',component:DeclarationComponent}
+     {path :'declaration',component:DeclarationComponent}
    ]},
 ];
 

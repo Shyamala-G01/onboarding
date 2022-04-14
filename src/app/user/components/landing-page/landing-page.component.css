@@ -1,0 +1,13 @@
+.landing-content{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-content-right img{
+    width: 100%;
+
+}
+
