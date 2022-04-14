@@ -1,0 +1,36 @@
+@import url('../../../../styles.css');
+.container{
+    height:100vh;
+    margin-left:12%;
+    width:79%;
+     display:flex;
+     flex-direction: column;
+    flex-wrap: wrap;
+   justify-content:right;
+    align-items:center;
+    position: relative;
+}
+.form-background
+{
+    background-color: rgba(196, 196, 196, 0.13);
+    padding:1.563rem 2.13rem;
+    border-radius:1%;
+    
+}
+
+mat-form-field 
+{
+    width: 21.875rem;
+    font-weight:500;
+}
+
+.register-heading
+{
+    color:#014868;
+    font-size: 1.563rem;
+    line-height: 2.5;
+}
+.form-background p{
+    padding: 0;
+}
+

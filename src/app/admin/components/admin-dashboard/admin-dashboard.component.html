@@ -1,17 +1,20 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav [mode]="mode" [opened]="openSidenav" class="side-nav">
-      
-      <div class="sidebar-wraper">
-          <mat-icon  (click)="sidenav.toggle()"
+    <div class="sidebar-wraper">
+      <mat-icon
+        (click)="sidenav.toggle()"
         (click)="isSidenavShown()"
-          class="white-icon close"
-         >close</mat-icon>
-          <div class="admin-profile">
-        <img
-          src="../../../../assets/images/account_circle.svg"
-          alt=""
-          srcset=""
-        />
+        class="white-icon close"
+        >close</mat-icon
+      >
+      <div class="profile">
+        <div class="profile-img">
+          <img
+            src="../../../../assets/images/pro.webp"
+            alt=""
+            srcset=""
+          />
+        </div>
         <h4>Alex</h4>
         <p>Human resource</p>
       </div>
@@ -23,13 +26,21 @@
             <p>Register New Admin</p>
           </a>
         </li>
-        <li class="nav-item" routerLink="addEmployee" [routerLinkActive]="['active']">
+        <li
+          class="nav-item"
+          routerLink="addEmployee"
+          [routerLinkActive]="['active']"
+        >
           <a class="nav-link">
             <mat-icon class="lists">library_add</mat-icon>
             <p>Register New Employee</p>
           </a>
         </li>
-        <li class="nav-item" routerLink="viewEmployee" [routerLinkActive]="['active']">
+        <li
+          class="nav-item"
+          routerLink="viewEmployee"
+          [routerLinkActive]="['active']"
+        >
           <a class="nav-link">
             <mat-icon class="lists">content_paste</mat-icon>
             <p>New Employee List</p>
@@ -40,20 +51,24 @@
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
-   
     <div class="header">
       <button
-      *ngIf="!sideNavShown"
+        *ngIf="!sideNavShown"
         mat-icon-button
         color="primary"
         (click)="sidenav.toggle()"
         (click)="isSidenavShown()"
-        style="margin-left:2rem;"
+        style="margin-left: 2rem"
       >
         <mat-icon class="menu">menu</mat-icon>
       </button>
-      
-      <img src="../../../../assets/images/logo.png" alt="" srcset="" class="logo">
+
+      <img
+        src="../../../../assets/images/logo.png"
+        alt=""
+        srcset=""
+        class="logo"
+      />
     </div>
 
     <router-outlet></router-outlet>
