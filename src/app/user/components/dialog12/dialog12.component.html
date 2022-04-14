@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>Add Education</h1>
+<div mat-dialog-content>
+       <form action="">
+         <mat-form-field appearance="outline">
+            <mat-label>Education</mat-label>
+            <input matInput type="text" value="12th" readonly="true"/>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Board</mat-label>
+            <input matInput type="text"  readonly="true"/>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>School Medium</mat-label>
+            <input matInput type="text"  readonly="true"/>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Percentage</mat-label>
+            <input matInput type="text"  readonly="true"/>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="outline">
+            <mat-label>Start Date</mat-label>
+            <input matInput [matDatepicker]="picker1" />
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        
+          <mat-form-field appearance="outline">
+            <mat-label>End Date</mat-label>
+            <input matInput [matDatepicker]="picker2" />
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+          </mat-form-field>
+        
+         <div>
+            <label for="">Upload Marksheet</label>
+            <input type="file" name="marksheet">
+         </div>
+
+       </form>
+  </div>
+
+<div mat-dialog-action [align]="'end'" class="btn-grp">
+   <button mat-button class="btn-primary" mat-dialog-close="true">Close</button>
+   <button mat-button class="btn-primary">Save</button>
+</div>

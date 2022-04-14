@@ -1,0 +1,52 @@
+<h1 mat-dialog-title>Organization Details</h1>
+<div mat-dialog-content>
+       <form action="">
+         <mat-form-field appearance="outline">
+            <mat-label>Organization</mat-label>
+            <input matInput type="text"  readonly="true"/>
+          </mat-form-field>
+          
+
+
+          <mat-form-field appearance="outline">
+            <mat-label>Joining Date</mat-label>
+            <input matInput [matDatepicker]="picker1" />
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        
+          <mat-form-field appearance="outline">
+            <mat-label>Relieving Date</mat-label>
+            <input matInput [matDatepicker]="picker2" />
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+          </mat-form-field>
+        
+         <div>
+            <label for="">Relieving Letter</label>
+            <input type="file" name="marksheet">
+         </div>
+
+         <div>
+            <label for="">Offer Letter</label>
+            <input type="file" name="marksheet">
+         </div>
+
+         <div>
+            <label for="">3 Months payslips</label>
+            <input type="file" name="marksheet" multiple>
+         </div>
+        
+         <mat-form-field appearance="outline">
+            <mat-label>Joining Date</mat-label>
+            <input matInput [matDatepicker]="picker3" />
+            <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+            <mat-datepicker #picker3></mat-datepicker>
+          </mat-form-field>
+       </form>
+  </div>
+
+<div mat-dialog-action [align]="'end'" class="btn-grp">
+   <button mat-button class="btn-primary" mat-dialog-close="true">Close</button>
+   <button mat-button class="btn-primary">Save</button>
+</div>

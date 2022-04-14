@@ -5,9 +5,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatDialogModule} from '@angular/material/dialog';
 
 const materialComponents = [
   MatButtonModule,
@@ -16,9 +22,15 @@ const materialComponents = [
   MatSidenavModule,
   MatFormFieldModule,
   MatInputModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatRadioModule,
+  MatSelectModule,
   MatCardModule,
   MatTableModule,
-  MatDividerModule
+  MatDividerModule,
+  MatCheckboxModule,
+  MatDialogModule,
 ];
 
 @NgModule({

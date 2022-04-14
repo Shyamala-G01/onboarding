@@ -4,22 +4,33 @@ import { CommonModule } from '@angular/common';
 import { UserRoutingModule } from './user-routing.module';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { MaterialModule } from '../material/material.module';
-import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 import { EducationalQualificationComponent } from './components/educational-qualification/educational-qualification.component';
 import { EmploymentDetailsComponent } from './components/employment-details/employment-details.component';
 import { OtherDetailsComponent } from './components/other-details/other-details.component';
 import { DeclarationComponent } from './components/declaration/declaration.component';
+import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
+import { DialogComponent } from './components/dialog10/dialog.component';
+import { Dialog12Component } from './components/dialog12/dialog12.component';
+import { DialogUGComponent } from './components/dialog-ug/dialog-ug.component';
+import { DialogPGComponent } from './components/dialog-pg/dialog-pg.component';
+import { DialogOrgComponent } from './components/dialog-org/dialog-org.component';
 import { HeaderComponent } from '../layout-components/header/header.component';
+
 
 
 @NgModule({
   declarations: [
     LandingPageComponent,
-    PersonalInformationComponent,
     EducationalQualificationComponent,
     EmploymentDetailsComponent,
     OtherDetailsComponent,
     DeclarationComponent,
+    PersonalInformationComponent,
+    DialogComponent,
+    Dialog12Component,
+    DialogUGComponent,
+    DialogPGComponent,
+    DialogOrgComponent,
     HeaderComponent
   ],
   imports: [

@@ -1,6 +1,26 @@
-<app-header></app-header>
-<p>landing-page works!</p>
-
+<!-- <app-header></app-header> -->
+<div class="landing-content">
+  <div class="landing-content-left">
+    <h1>welocome to diggibyte</h1>
+    <h2>upload instructions</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+      excepturi reiciendis vel. Ut facere accusantium culpa, earum iure unde
+      corrupti quaerat voluptatum suscipit, ullam pariatur porro minus
+      necessitatibus id inventore?
+    </p>
+    <button mat-raised-button class="btn-primary" routerLink="personal-information">Proceed</button>
+  </div>
+  <div class="landing-content-right">
+    <img src="../../../../assets/images/welcome.png" alt="Welcome_image" srcset="">
+  </div>
+</div>
+<style>
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
 <nav>
   <ul>
     <li><a routerLink="personal-information">personal-information</a></li>
@@ -9,9 +29,9 @@
     </li>
     <li><a routerLink="employment-details">employment-details</a></li>
     <li><a routerLink="other-details">other-details</a></li>
-    <li><a routerLink="decalartion">decalartion</a></li>
+    <li><a routerLink="declaration">declaration</a></li>
   </ul>
 </nav>
 
 <!-- For rendering the respective components -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
