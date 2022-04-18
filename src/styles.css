@@ -81,3 +81,21 @@ backgrd colr #f6f7f9
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.uploadContainer{
+  display: flex;
+  column-gap: 10px;
+  border: 1px solid #dcdddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.uploadContainer label{
+  color: #8c8c8c;
+  text-transform: capitalize;
+}

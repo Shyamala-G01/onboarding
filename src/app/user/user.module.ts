@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule,Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { UserRoutingModule } from './user-routing.module';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
@@ -15,6 +18,7 @@ import { DialogUGComponent } from './components/dialog-ug/dialog-ug.component';
 import { DialogPGComponent } from './components/dialog-pg/dialog-pg.component';
 import { DialogOrgComponent } from './components/dialog-org/dialog-org.component';
 import { HeaderComponent } from '../layout-components/header/header.component';
+import { DetailsComponent } from './components/details/details.component';
 
 
 
@@ -31,12 +35,18 @@ import { HeaderComponent } from '../layout-components/header/header.component';
     DialogUGComponent,
     DialogPGComponent,
     DialogOrgComponent,
-    HeaderComponent
+    HeaderComponent,
+    DetailsComponent,
+
   ],
   imports: [
     CommonModule,
     UserRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FontAwesomeModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class UserModule { }

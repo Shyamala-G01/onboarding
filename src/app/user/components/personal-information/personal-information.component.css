@@ -9,3 +9,28 @@
     margin: 5px;
   }
 
+
+
+  .content{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   column-gap: 10px;
+  }
+
+   h3{
+    font-weight: bold;
+  }
+
+  .genderContainer{
+    border: 1px solid #dcdddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1em; 
+   }
+
+  .genderContainer label{
+    color: #8c8c8c;
+    text-transform: capitalize;
+    margin-right: 10px;
+  }
+

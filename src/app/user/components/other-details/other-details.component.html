@@ -1,37 +1,41 @@
 
 <div class="container">
-    <span>Other details</span>
-  <form>
-    <div>
-        <label for="">Aadhar Card</label>
-        <input type="file" name="marksheet">
-     </div>
+    <h1>Other Details</h1>
+  <form [formGroup]="otherDetail" (ngSubmit)="onSubmit()">
+  <div class="content">
+    <div class="uploadContainer">
+      <label for="aadharcard">Aadhar Card</label>
+      <input type="file" id="aadharcard" name="aadharcard" formControlName="aadharCard">
+   </div>
 
-     <div>
-        <label for="">PAN Card</label>
-        <input type="file" name="marksheet">
-     </div>
+   <div class="uploadContainer">
+      <label for="panCard">PAN Card</label>
+      <input type="file" id="panCard" name="panCard" formControlName="panCard">
+   </div>
 
-     <div>
-        <label for="">Passport Details</label>
-        <input type="file" name="marksheet" multiple>
-     </div>
+   <div class="uploadContainer">
+      <label for="passportDetails">Passport Details</label>
+      <input type="file" name="passportDetails" id="passportDetails" formControlName="passportDetails">
+   </div>
 
-     <div>
-        <label for="">Covid Certificate</label>
-        <input type="file" name="marksheet" multiple>
-     </div>
+   <div class="uploadContainer">
+      <label for="covidCertificate">Covid Certificate</label>
+      <input type="file" name="covidCertificate" id="covidCertificate" multiple formControlName="covidCertificate">
+   </div>
+  </div>
+
+     <button type="submit">Submit</button>
   </form>
 
   <div class="btn">
     <div class="btn-back">
-      <button mat-button class="btn-primary" routerLink="personal-information">
+      <button mat-button class="btn-primary" (click)="back()">
         Back
       </button>
     </div>
     <div class="btn-grp">
       <button mat-button class="btn-primary">Save</button>
-      <button mat-button class="btn-primary">Next</button>
+      <button mat-button class="btn-primary" (click)="next()">Next</button>
     </div>
   </div>
   </div>

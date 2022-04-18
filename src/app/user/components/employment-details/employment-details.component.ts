@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DialogOrgComponent } from '../dialog-org/dialog-org.component';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employment-details',
@@ -10,7 +11,14 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class EmploymentDetailsComponent implements OnInit {
  
   
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog, private router : Router) { }
+
+  next(){
+    this.router.navigateByUrl('/user/details/other-details');
+  }
+  back(){
+    this.router.navigateByUrl('/user/details/educational-qualification');
+  }
 
   ngOnInit(): void {
   }

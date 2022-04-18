@@ -1,0 +1,76 @@
+
+  
+  
+  
+
+<mat-sidenav-container>
+    <!-- SideBar Content -->
+    <mat-sidenav #sidenav mode="over">
+      <div class="sidenav-section">
+        <div class="close">
+          <button mat-icon-button arial-label="Close" (click)="sidenav.close()">
+            <fa-icon [icon]="faBars"></fa-icon>
+          </button>
+        </div>
+  
+        <div class="sidenav-menu">
+          <ul>
+            <li>
+              <a routerLink="personal-information" (click)="sidenav.close()"
+                ><fa-icon [icon]="faAddressBook"></fa-icon>personal-information</a
+              >
+            </li>
+            <li>
+              <a routerLink="educational-qualification" (click)="sidenav.close()"
+                ><fa-icon [icon]="faGraduationCap"></fa-icon>educational-qualification</a
+              >
+            </li>
+            <li>
+              <a routerLink="employment-details" (click)="sidenav.close()"
+                ><fa-icon [icon]="faLandmark"></fa-icon>employment-details</a
+              >
+            </li>
+            <li>
+              <a routerLink="other-details" (click)="sidenav.close()"
+                ><fa-icon [icon]="faFileAlt"></fa-icon>other-details</a
+              >
+            </li>
+            <li>
+              <a routerLink="declaration" (click)="sidenav.close()"
+                ><fa-icon [icon]="faPenNib"></fa-icon>declaration</a
+              >
+            </li>
+          </ul>
+        </div>
+  
+        <p class="footer">&copy;Diggibyte2022</p>
+      </div>
+    </mat-sidenav>
+  
+    <!-- Main-Content -->
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <button
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with menu icon"
+          (click)="sidenav.toggle()"
+        >
+        <fa-icon [icon]="faBars" ></fa-icon>
+        </button>
+        <img
+          src="../../../assets//images/diggtibyte_logo.png"
+          width="70px"
+          height="70px"
+          alt="diggtibyte_logo"
+        />
+        <fa-icon [icon]="faUserCircle" ></fa-icon>
+      </mat-toolbar>
+      <!-- All the user components get rendered -->
+
+      <router-outlet></router-outlet>
+  
+      <!-- landing page component -->
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>

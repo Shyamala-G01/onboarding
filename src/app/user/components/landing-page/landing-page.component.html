@@ -1,37 +1,30 @@
-<!-- <app-header></app-header> -->
+<mat-toolbar>
+  <img
+    src="../../../assets//images/diggtibyte_logo.png"
+    width="70px"
+    height="70px"
+    alt="diggtibyte_logo"
+  />
+  <fa-icon [icon]="faUserCircle"></fa-icon>
+</mat-toolbar>
 <div class="landing-content">
   <div class="landing-content-left">
-    <h1>welocome to diggibyte</h1>
-    <h2>upload instructions</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-      excepturi reiciendis vel. Ut facere accusantium culpa, earum iure unde
-      corrupti quaerat voluptatum suscipit, ullam pariatur porro minus
-      necessitatibus id inventore?
-    </p>
-    <button mat-raised-button class="btn-primary" routerLink="personal-information">Proceed</button>
+    <h4>welocome to diggibyte</h4>
+    <h1>upload instructions</h1>
+    <ul>
+      <li>Step1</li>
+      <li>Step2</li>
+      <li>Step3</li>
+      <li>Step4</li>
+      <li>Step5</li>
+      <li>Step6</li>
+      <li>Step7</li>
+    </ul>
+    <button mat-raised-button class="btn-primary" routerLink="details">
+      Proceed<fa-icon [icon]="faAngleRight"></fa-icon>
+    </button>
   </div>
   <div class="landing-content-right">
-    <img src="../../../../assets/images/welcome.png" alt="Welcome_image" srcset="">
+   <img src="../../../../assets/images/welcome.png" alt="" width="512" height="512">
   </div>
 </div>
-<style>
-  nav ul{
-    display: flex;
-    justify-content: space-between;
-  }
-</style>
-<nav>
-  <ul>
-    <li><a routerLink="personal-information">personal-information</a></li>
-    <li>
-      <a routerLink="educational-qualification">educational-qualification</a>
-    </li>
-    <li><a routerLink="employment-details">employment-details</a></li>
-    <li><a routerLink="other-details">other-details</a></li>
-    <li><a routerLink="declaration">declaration</a></li>
-  </ul>
-</nav>
-
-<!-- For rendering the respective components -->
-<!-- <router-outlet></router-outlet> -->

@@ -9,14 +9,12 @@ import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-
-
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+  selector: 'app-details',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.css']
 })
-export class LandingPageComponent implements OnInit {
+export class DetailsComponent implements OnInit {
   faBars = faBars;
   faTimes = faTimes;
   faGraduationCap = faGraduationCap;
@@ -26,7 +24,6 @@ export class LandingPageComponent implements OnInit {
  faFileAlt = faFileAlt;
  faUserCircle = faUserCircle;
  faAngleRight = faAngleRight;
-  
 
   constructor() { }
 

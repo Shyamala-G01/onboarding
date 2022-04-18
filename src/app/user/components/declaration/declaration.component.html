@@ -1,40 +1,72 @@
-<p>declaration works!</p>
-
 <div class="container">
-    <span>Other details</span>
-  <form action="">
-    <mat-form-field appearance="outline">
-        <mat-label>Joining Date</mat-label>
-        <input matInput [matDatepicker]="picker1" />
-        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <h1>Declaration</h1>
+  <form [formGroup]="declaration" (ngSubmit)="onSubmit()">
+    <div class="content">
+      <mat-form-field appearance="outline">
+        <mat-label for="joiningDate">Joining Date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker1"
+          name="joiningDate"
+          id="joiningDate"
+          formControlName="joiningDate"
+        />
+
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="picker1"
+        ></mat-datepicker-toggle>
         <mat-datepicker #picker1></mat-datepicker>
       </mat-form-field>
-    <div>
-        <label for="">Photo Upload</label>
-        <input type="file" name="marksheet">
-     </div>
 
-     <mat-form-field appearance="outline">
-        <mat-label>Place</mat-label>
-        <input matInput type="text" placeholder="House No." />
+      <div class="uploadContainer">
+        <label for="photo">upload Image</label>
+        <input
+          type="file"
+          placeholder="Upload"
+          formControlName="photo"
+          id="photo"
+          name="photo"
+        />
+      </div>
+
+      <mat-form-field appearance="outline">
+        <mat-label for="place">Place</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Place"
+          id="place"
+          name="place"
+          formControlName="place"
+        />
       </mat-form-field>
 
-     <mat-form-field appearance="outline">
-        <mat-label>Date</mat-label>
-        <input matInput [matDatepicker]="picker2" />
-        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-form-field appearance="outline">
+        <mat-label for="date">Date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker2"
+          id="date"
+          name="date"
+          formControlName="date"
+        />
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="picker2"
+        ></mat-datepicker-toggle>
         <mat-datepicker #picker2></mat-datepicker>
       </mat-form-field>
+    </div>
+    <button type="submit">Submit</button>
   </form>
 
   <div class="btn">
     <div class="btn-back">
-      <button mat-button class="btn-primary" routerLink="personal-information">
-        Back
-      </button>
+      <button mat-button class="btn-primary" (click)="back()">Back</button>
     </div>
     <div class="btn-grp">
       <button mat-button class="btn-primary">Submit</button>
     </div>
   </div>
-  </div>
+</div>
