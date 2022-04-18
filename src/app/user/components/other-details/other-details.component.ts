@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-other-details',
@@ -7,8 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OtherDetailsComponent implements OnInit {
 
-  constructor() { }
+  otherDetail = new FormGroup({
+    aadharCard : new FormControl(''),
+    panCard : new FormControl(''),
+    passportDetails : new FormControl(''),
+    covidCertificate : new FormControl(''),
+  })
 
+  constructor(private router : Router) { }
+
+  next(){
+    this.router.navigateByUrl('/user/details/declaration');
+  }
+  back(){
+    this.router.navigateByUrl('/user/details/employment-details');
+  }
+  onSubmit(){
+    console.log(this.otherDetail.value)
+  }
   ngOnInit(): void {
   }
 

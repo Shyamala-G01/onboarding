@@ -1,13 +1,43 @@
-.landing-content{
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+* {
+  box-sizing: border-box;
 }
 
-.landing-content-right img{
-    width: 100%;
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:16px;
+}
+
+.landing-content-left{
 
 }
+
+.landing-content-left h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#014868 ;
+}
+
+.landing-content-left h1{
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.landing-content-left fa-icon{
+  margin-left: 5px;
+}
+.landing-content-right {
+padding:15px 0px 15px 0px;
+}
+
 

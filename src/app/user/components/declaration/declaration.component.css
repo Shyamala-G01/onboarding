@@ -1,0 +1,11 @@
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.uploadContainer{
+    margin-bottom:1.34375rem ;
+    padding: 15px ;
+}
