@@ -1,0 +1,46 @@
+<div class="container">
+    <span class="edit-employee-heading">Edit Employee Details </span>
+  <form>
+    <div class="form-background">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Employee ID</mat-label>
+          <input matInput formControlName="emp_id" [value]=""/>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="emp_name" [value]=""/>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Email ID</mat-label>
+          <input matInput formControlName="emp_id" [value]=""/>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Phone Number</mat-label>
+          <input matInput formControlName="emp_phoneno" [value]=""/>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>DOJ</mat-label>
+          <input matInput formControlName="emp_doj"  [value]=""/>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Designation</mat-label>
+          <input matInput formControlName="emp_desig"  [value]=""/>
+        </mat-form-field>
+      </p>
+      <p>
+        <button mat-button class="button-gradient" (click)="edit($event)">Edit Employee</button>
+      </p>
+    </div>
+  </form>
+</div>

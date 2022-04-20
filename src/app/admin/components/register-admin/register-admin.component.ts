@@ -1,5 +1,8 @@
+import { getLocaleDateFormat } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-register-admin',
@@ -7,29 +10,28 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./register-admin.component.css']
 })
 export class RegisterAdminComponent implements OnInit {
-
+  // user:any
+  // admin={
+  //   name:'',
+  // }
+  
   constructor(private router:Router,private route:ActivatedRoute) { }
+  regForm=new FormGroup({
+    name:new FormControl(''),
+    email:new FormControl(''),
+    phoneNumber:new FormControl(''),
+    designation:new FormControl(''),
 
+  })
   ngOnInit(): void {
+    localStorage.clear();
   }
   register(e:Event){
     e.preventDefault()
-    console.log("s")
-    this.router.navigate(["../registerStatus"],{relativeTo:this.route})
+    // localStorage.setItem("FormGroup",JSON.stringify(this.regForm.value))
+    // this.user = localStorage.getItem('FormGroup');
+    // this.admin=JSON.parse(this.user)
+    // this.router.navigate(["../registerStatus"],{relativeTo:this.route})
   }
-
-
-  // dialogue code
-  display=''
-  modal=document.getElementById('modal')
-  openDiag(){
-   this.display='block'
-  }
-  close(){
-    this.display='none'
-  }
-  deleteEmp(){
   
-    this.router.navigate(["../registerStatus"],{relativeTo:this.route})
-  }
 }

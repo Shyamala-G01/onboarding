@@ -1,0 +1,65 @@
+<div class="list-container">
+  <div class="viewEmployeeHeading">View Employees</div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element" >{{ element.name }}</td>
+    </ng-container>
+
+    <!-- <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell *matCellDef="let element" class="name">{{ element.email }}</td>
+    </ng-container> -->
+
+    <ng-container matColumnDef="phoneno">
+      <th mat-header-cell *matHeaderCellDef>Phone Number</th>
+      <td mat-cell *matCellDef="let element">{{ element.phoneno }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="doj">
+      <th mat-header-cell *matHeaderCellDef>DOJ</th>
+      <td mat-cell *matCellDef="let element">{{ element.doj }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>Status</th>
+      <td mat-cell *matCellDef="let element">{{ element.status }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Actions</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon class="actions" (click)="openDiag()">delete</mat-icon>
+        <mat-icon class="actions" (click)="editPage()">edit</mat-icon>
+        <mat-icon class="actions" (click)="openDetails(element.name)"
+          >preview</mat-icon
+        >
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <div id="diag-modal" class="modal" [ngStyle]="{ display: display }">
+   
+    <mat-card class="dialogue">
+      <div class="diag-content">
+        <p>Delete Employee DB0045</p>
+      </div>
+
+      <div class="diag-actions">
+        <button
+          mat-button
+          class="button-gradient diag-btn"
+          (click)="deleteEmp()"
+        >
+          yes
+        </button>
+        <button mat-button class="button-gradient diag-btn" (click)="close()">
+          no
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>

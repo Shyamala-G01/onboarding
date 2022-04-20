@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding: 0; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* 
 normal  font-size: .9rem;
@@ -15,79 +22,79 @@ backgrd colr #f6f7f9
 
 /* btn gradient */
 .button-gradient {
-    background-image: linear-gradient(to right, #ff934f, #fb7d2e);
-    /* background-image: linear-gradient( to right ,#E78346,#FF934f); */
-    align-items: center;
-    width: 21.875rem;
-    color: white;
-  }
-  /* profile conatiner */
-  .profile {
-    align-items: center;
-    display: flex;
-    color: white;
-    flex-direction: column;
-  }
-  
-  .profile h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  .profile p {
-    padding-top: 0;
-    font-weight: 500;
-    margin-bottom: 0;
-  }   
-  /*profie image style */
-  .profile-img {
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 0;
-    max-width: 9.2rem;
-    max-height: 9.2rem;
-    margin-bottom: 0.5rem;
-  }
-  .profile-img img {
-    width: 100%;
-    height: auto;
-  }
-  
-.btn{
+  background-image: linear-gradient(to right, #ff934f, #fb7d2e);
+  /* background-image: linear-gradient( to right ,#E78346,#FF934f); */
+  align-items: center;
+  width: 21.875rem;
+  color: white;
+}
+/* profile conatiner */
+.profile {
+  align-items: center;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.profile h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.profile p {
+  padding-top: 0;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+/*profie image style */
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  max-width: 9.2rem;
+  max-height: 9.2rem;
+  margin-bottom: 0.5rem;
+}
+.profile-img img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.btn-grp{
+.btn-grp {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 10px;
 }
 
-.btn-primary{
+.btn-primary {
   background-image: linear-gradient(to right, #ff934f, #fb7d2e);
-  color: #FDFCFC;
+  color: #fdfcfc;
   font-size: 1rem;
   font-weight: 700;
   text-transform: capitalize;
 }
 
-.btn-secondary{
+.btn-secondary {
   background-image: linear-gradient(to right, #074d6d, #014868);
-  color: #FDFCFC;
+  color: #fdfcfc;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.container{
+.container {
   margin: 0 auto;
   width: 90%;
 }
 
-.uploadContainer{
+.uploadContainer {
   display: flex;
   column-gap: 5px;
   border: 1px solid #dcdddd;
@@ -95,7 +102,7 @@ backgrd colr #f6f7f9
   border-radius: 5px;
 }
 
-.uploadContainer label{
+.uploadContainer label {
   color: #8c8c8c;
   text-transform: capitalize;
 }

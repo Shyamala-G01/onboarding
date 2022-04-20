@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 .success{
     background-color: rgb(33, 217, 33);
@@ -23,16 +24,18 @@
     font-weight: 500;
    
     font-size: 1.4rem;
-}.failure mat-icon,.success mat-icon{
+}
+.failure mat-icon,.success mat-icon{
     font-size: 3rem;
 }
+
 .reg-image{
     padding: 0;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 .successed-img{
     width: 50%;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .failed-img{
     max-width: 30%;
@@ -52,10 +55,102 @@
 }
 .back{
     width: 10rem;
-    margin-left: 80%;
+    margin-left: 70%;
     margin-top:3rem;
 }
-
-
-
+@media (max-width:65.625em) {
+    .content{
+        margin-left:18%;
+    }
+}
+@media (max-width:60.5625em) {
+    .content{
+           width:70%;
+           margin-left: 13%;
+       }
+}
+ @media (max-width:51em) {
+    .failure p,.success p{
+        font-weight: 100;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:45.0625em){
+    .back{
+        width: 7rem;
+    }
+    .failure p,.success p{
+        font-weight: 50;
+       font-size: 0.9rem;
+    }
+    .content{
+        margin-left:11%;
+        padding: 1rem;
+    }
+    .successed-img{
+        width: 70%;
+        margin-left: 3rem;
+    }
+ }
+ @media (max-width:34.375em){
+    .content{
+        width:70%;
+      padding: 0.2rem;
+      margin-left: 15%;
+    }
+    .back{
+        width: 0.5rem;
+    }
+    .failure mat-icon,.success mat-icon{
+        font-size: 1.1rem;
+        margin-top: 1.1rem;
+    }
+    .failure p,.success p{
+        font-weight: 30;
+       font-size: 0.7rem;
+        padding-left: 0.1rem;
+    }
+} 
+@media (max-width:24.625em){
+    .content{
+        width:80%;
+        margin-left: 1.5rem;
+    }
+    .successed-img{
+        width: 70%;
+        margin-left:1.5rem ;
+    }
+} 
+@media (max-width:21.5em){
+    .content{
+        width:90%;
+        margin:0rem 0.6rem;
+        margin-top:0.5rem;
+       
+    }
+    .failure mat-icon,.success mat-icon{
+        font-size: 0.7rem;
+        margin-top: 1.4rem;
+    }
+    .successed-img{
+        width: 80%;
+        margin-left:1.2rem ;
+    }
+ 
+} 
+@media (max-width:19.125em){
+    .content{
+        width:95%;
+        /* margin:0rem 0.2rem; */
+        margin-top:0.5rem;
+        margin-left:0.09rem;
+       }
+       .failure p,.success p{
+        font-weight: 20;
+       font-size: 0.5rem;
+      }
+      .back{
+        width: 0.1rem;
+    }
+}
 

@@ -1,34 +1,39 @@
 <div class="container">
-    <span class="register-heading">Register Admin </span>
-  <form>
+  <span class="register-heading">Register Admin </span>
+  <form [formGroup]="regForm">
     <div class="form-background">
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Full Name</mat-label>
-          <input matInput placeholder="Enter Full Name" />
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Email ID</mat-label>
-          <input matInput placeholder="Enter Email" />
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Phone Number</mat-label>
-          <input matInput placeholder="Enter Phone Number" />
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="outline">
-          <mat-label>Designation</mat-label>
-          <input matInput placeholder="Enter Designation" />
-        </mat-form-field>
-      </p>
-      <p>
-        <button mat-button class="button-gradient" (click)="register($event)" >Register Admin</button>
-      </p>
-    </div>
+      
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Full Name</mat-label>
+            <input matInput placeholder="Enter Full Name" formControlName="name"/>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Email ID</mat-label>
+            <input matInput placeholder="Enter Email" formControlName="email"/>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input matInput placeholder="Enter Phone Number" formControlName="phoneNumber" />
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Designation</mat-label>
+            <input matInput placeholder="Enter Designation" formControlName="designation"/>
+          </mat-form-field>
+        </p>
+        <p>
+          <button mat-button class="button-gradient" (click)="register($event)">
+            Register Admin
+          </button>
+        </p>
+      </div>
+   
   </form>
 </div>
+

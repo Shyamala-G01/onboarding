@@ -1,5 +1,23 @@
-
-.landing-container{
-    margin-left: 12%;
-    margin-top: 1.5rem;
+.landing-container {
+  margin-left: 12%;
+  margin-top: 1.5rem;
+}
+.landing-img {
+  max-width: 90%;
+  object-fit: cover;
+}
+/* ---------------------- */
+@media (max-width: 75em) {
+  .landing-container {
+    margin-left: 11%;
+  }
+}
+@media (max-width: 62.5em) {
+  .landing-container {
+    margin-left: 11%;
+  }
+  .landing-img {
+    object-fit: fill;
+    width: 100%;
+  }
 }

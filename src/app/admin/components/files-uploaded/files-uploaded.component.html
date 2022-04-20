@@ -1,0 +1,4 @@
+<ul *ngFor="let datas of data.file; index as i">
+    <li (click)="check(datas)">{{datas.name}}</li>
+</ul>
+<button mat-button class="button-gradient" (click)="onNoClick()">close</button>

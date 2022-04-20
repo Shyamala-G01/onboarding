@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  .container {
+    position: relative;
+  }
+  .form-background {
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 20%;
+    background-color: rgba(196, 196, 196, 0.13);
+    padding: 1.563rem 2.13rem;
+    border-radius: 1%;
+    margin-bottom: 4rem;
+  }
+  mat-form-field {
+    width: 22.875rem;
+    font-weight: 500;
+  }
+  
+.edit-employee-heading
+{
+    color:#014868;
+    font-size: 1.563rem;
+    line-height: 2.5;
+}
+.form-background p {
+    padding: 0;
+  }
+  /* --------------------------------- */
+  @media (max-width: 116.6em) {
+    .edit-employee-heading {
+      margin-left: 33%;
+    }
+    .form-background {
+      width: 50%;
+      text-align: center;
+    }
+   
+  }
+ 
+  @media (max-width: 69em) {
+    .edit-employee-heading {
+        margin-left: 30%;
+      }
+   
+    mat-form-field {
+      width: 15rem;
+      font-weight: 0;
+    }
+    .button-gradient {
+      width: 15rem;
+    }
+
+  }
+  @media (max-width: 56.25em) {
+    .form-background {
+      width: 70%;
+    }
+    
+  }
+  @media (max-width: 51.25em) {
+    .edit-employee-heading {
+        margin-left: 30%;
+    } 
+    .form-background {
+        margin-left: 15%;
+    }
+  }
+  @media (max-width: 48em) {
+    .edit-employee-heading {
+        margin-left: 30%;
+    } 
+    .form-background {
+        margin-left: 15%;
+    }
+  }
+  @media (max-width: 33.75em) {
+    .edit-employee-heading {
+        margin-left: 33%;
+        font-size: 1rem;
+      } 
+      .form-background {
+        margin-left: 15%;
+        padding: 1.563rem 1rem;
+      }
+  }
+ 
+  @media (max-width:26.25em){
+    .form-background{
+      width: 80%;
+      margin-left: 10%;
+      text-align: start;
+    }
+   
+    mat-form-field {
+      font-size: .5rem;
+      width: 12rem;
+    }
+    .button-gradient {
+      width: 12rem;
+    }
+    .edit-employee-heading {
+      margin-left: 25%;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width:17.5em){
+    .form-background{
+      width: 90%;
+      margin-left: 5%;
+      text-align: start;
+    }
+    mat-form-field {
+        font-size: .5rem;
+        width: 10rem;
+      }
+    .button-gradient {
+     width: 10rem;
+    }
+    .edit-employee-heading {
+    margin-left: 20%;
+    font-size: 0.8rem;
+    }
+}
