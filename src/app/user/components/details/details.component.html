@@ -7,7 +7,11 @@
           <fa-icon [icon]="faTimes"></fa-icon>
         </button>
       </div>
-
+     
+      <div class="userProfile">
+        <fa-icon [icon]="faUserCircle"></fa-icon>
+        <h3>UserName</h3>
+      </div>
       <div class="sidenav-menu">
         <ul>
           <li>
@@ -46,6 +50,9 @@
   <!-- Main-Content -->
   <mat-sidenav-content>
     <mat-toolbar>
+      <div class="leftContent">
+
+      
       <button
         mat-icon-button
         class="example-icon"
@@ -55,11 +62,12 @@
         <fa-icon [icon]="faBars"></fa-icon>
       </button>
       <img
-        src="../../../assets//images/diggtibyte_logo.png"
-        width="70px"
-        height="70px"
+        src="../../../assets//images/full_logo.png"
+       width="200px"
+       height="50px"
         alt="diggtibyte_logo"
       />
+    </div>
       <fa-icon [icon]="faUserCircle"></fa-icon>
     </mat-toolbar>
     <!-- All the user components get rendered -->

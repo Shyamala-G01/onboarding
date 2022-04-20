@@ -7,6 +7,7 @@ import {
   FormControl,
 } from '@angular/forms';
 import { JsonPipe } from '@angular/common';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-personal-information',
@@ -46,9 +47,9 @@ export class PersonalInformationComponent implements OnInit {
     pincode2: new FormControl('', [Validators.required]),
   });
 
-  get firstName() {
-    return this.personalInformation.get('firstName');
-  }
+  // get firstName() {
+  //   return this.personalInformation.get('firstName');
+  // }
 
   constructor(private router: Router) {}
 
@@ -81,10 +82,19 @@ export class PersonalInformationComponent implements OnInit {
       });
     }
   }
+  
+
 
   onSubmit() {
-    console.log(this.personalInformation.value);
+   
   }
 
-  ngOnInit(): void {}
+ 
+
+  ngOnInit(): void {
+
+
+  }
+
+  
 }

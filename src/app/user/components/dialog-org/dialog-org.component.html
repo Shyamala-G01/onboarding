@@ -1,5 +1,5 @@
 <h1 mat-dialog-title>Organization Details</h1>
-<div mat-dialog-content>
+<div>
        <form [formGroup]="organization" (ngSubmit)="onSubmit()">
          <mat-form-field appearance="outline">
             <mat-label for="organizationName">Organization</mat-label>
@@ -20,17 +20,17 @@
             <mat-datepicker #picker2></mat-datepicker>
           </mat-form-field>
         
-         <div>
+         <div class="uploadContainer">
             <label for="relievingLetter">Relieving Letter</label>
             <input type="file" name="relievingLetter" id="relievingLetter" formControlName="relievingLetter">
          </div>
 
-         <div>
+         <div class="uploadContainer">
             <label for="offerLetter">Offer Letter</label>
             <input type="file" name="offerLetter" id="offerLetter" formControlName="offerLetter">
-         </div>
+         </div >
 
-         <div>
+         <div class="uploadContainer">
             <label for="payslip">3 Months payslips</label>
             <input type="file" name="payslip" id="payslip" formControlName="payslip" multiple>
          </div>
@@ -42,7 +42,7 @@
             <mat-datepicker #picker3></mat-datepicker>
           </mat-form-field>
 
-          <button type="submit">Submit</button>
+          <button type="submit" [disabled]="!organization.valid">Submit</button>
        </form>
   </div>
 

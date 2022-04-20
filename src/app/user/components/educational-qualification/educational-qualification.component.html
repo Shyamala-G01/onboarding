@@ -1,5 +1,5 @@
 <div class="container">
-  <span>Education qualification</span>
+  <h1>Education qualification</h1>
   <mat-form-field appearance="outline">
     <mat-select>
       <mat-option
@@ -12,27 +12,23 @@
     </mat-select>
   </mat-form-field>
 
-  <div>
-    <label for="">Transfer Certificate</label>
-    <input type="file" name="marksheet">
- </div>
 
- <div>
-    <label for="">Provisional Certificate</label>
-    <input type="file" name="marksheet">
- </div>
-
- <div>
-    <label for="">Convocation Certificate</label>
-    <input type="file" name="marksheet">
- </div>
+  <!-- Dispplay Section -->
+  <div class="10th" hidden><app-dialog></app-dialog></div>
+  <div class="12th" hidden><app-dialog12></app-dialog12></div>
+  <div class="UG" hidden><app-dialog-ug></app-dialog-ug></div>
+  <div class="PG" hidden><app-dialog-pg></app-dialog-pg></div>
+  <!-- Navigation Button -->
 
 
-
- <!-- Navigation Button -->
   <div class="btn">
     <div class="btn-back">
-      <button mat-button class="btn-primary" routerLink="personal-information" (click)="back()">
+      <button
+        mat-button
+        class="btn-primary"
+        routerLink="personal-information"
+        (click)="back()"
+      >
         Back
       </button>
     </div>
