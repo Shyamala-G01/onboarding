@@ -160,8 +160,8 @@
       <mat-form-field appearance="outline">
         <mat-label for="state">State</mat-label>
         <mat-select formControlName="state" id="state" name="state">
-          <mat-option *ngFor="let city of cities" [value]="city">
-            {{ city }}
+          <mat-option *ngFor="let state of states" [value]="state">
+            {{ state }}
           </mat-option>
         </mat-select>
       </mat-form-field>
@@ -243,8 +243,8 @@
       <mat-form-field appearance="outline">
         <mat-label for="state">State</mat-label>
         <mat-select formControlName="state2" id="state" name="state">
-          <mat-option *ngFor="let city of cities" [value]="city">
-            {{ city }}
+          <mat-option *ngFor="let state of states" [value]="state">
+            {{ state }}
           </mat-option>
         </mat-select>
       </mat-form-field>

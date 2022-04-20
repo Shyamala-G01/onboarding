@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./educational-qualification.component.css'],
 })
 export class EducationalQualificationComponent implements OnInit {
-  educations = ['10th', '12th', 'Graduation/Diploma', 'Master/Post-Graduation'];
+  educations = ['10th', '12th', 'Graduation/Diploma', 'Masters/Post-Graduation'];
 
   constructor(private dialog: MatDialog, private router: Router) {}
   
@@ -29,6 +29,7 @@ export class EducationalQualificationComponent implements OnInit {
     const dialogStyle = {
       height: '90%',
       width: '30%',
+      
     };
     switch (index) {
       case 0:
@@ -45,4 +46,6 @@ export class EducationalQualificationComponent implements OnInit {
         break;
     }
   }
+
+ 
 }

@@ -1,44 +1,50 @@
 
 <h1 mat-dialog-title>Add Education</h1>
-<div mat-dialog-content>
-       <form action="">
+<div>
+       <form [formGroup]="dialog10Form" (ngSubmit)="onSubmit()">
          <mat-form-field appearance="outline">
-            <mat-label>Education</mat-label>
-            <input matInput type="text" value="10th" readonly="true"/>
+            <mat-label for="education">Education</mat-label>
+            <input matInput type="text" id="education" name="education" formControlName="education" readonly="true"/>
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>Board</mat-label>
-            <input matInput type="text"  readonly="true"/>
+            <mat-label for="board">Board</mat-label>
+            <input matInput type="text"  id="board" name="board" formControlName="board">
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>School Medium</mat-label>
-            <input matInput type="text"  readonly="true"/>
+            <mat-label for="schoolMedium">School Medium</mat-label>
+            <input matInput type="text" id="schoolMedium" name="schoolMedium" formControlName="schoolMedium" />
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>Percentage</mat-label>
-            <input matInput type="text"  readonly="true"/>
+            <mat-label for="percentage">Percentage</mat-label>
+            <input matInput type="text"  id="percentage" name="percentage" formControlName="percentage"/>
           </mat-form-field>
 
 
           <mat-form-field appearance="outline">
-            <mat-label>Start Date</mat-label>
-            <input matInput [matDatepicker]="picker1" />
+            <mat-label for="startDate">Start Date</mat-label>
+            <input matInput [matDatepicker]="picker1" id="startDate" name="startDate" formControlName="startDate"/>
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
           </mat-form-field>
         
           <mat-form-field appearance="outline">
-            <mat-label>End Date</mat-label>
-            <input matInput [matDatepicker]="picker2" />
+            <mat-label for="endDate">End Date</mat-label>
+            <input matInput [matDatepicker]="picker2" id="endDate" name="endDate" formControlName="endDate"/>
             <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
             <mat-datepicker #picker2></mat-datepicker>
           </mat-form-field>
         
-         <div>
-            <label for="">Upload Marksheet</label>
-            <input type="file" name="marksheet">
+         <div class="uploadContainer">
+            <label for="marksheet">Upload Marksheet</label>
+            <input type="file" id="marksheet" name="marksheet" formControlName="marksheet">
          </div>
+        
+         <div class="uploadContainer">
+          <label for="transferCertificate">Transfer Certificate</label>
+          <input type="file" id="transferCertificate" name="transferCertificate" formControlName="transferCertificate">
+       </div>
 
+       <button type="submit" [disabled]="!dialog10Form.valid">Submit</button>
        </form>
   </div>
 
@@ -46,3 +52,4 @@
    <button mat-button class="btn-primary" mat-dialog-close="true">Close</button>
    <button mat-button class="btn-primary">Save</button>
 </div>
+

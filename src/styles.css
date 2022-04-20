@@ -71,7 +71,7 @@ backgrd colr #f6f7f9
   color: #FDFCFC;
   font-size: 1rem;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .btn-secondary{
@@ -89,7 +89,7 @@ backgrd colr #f6f7f9
 
 .uploadContainer{
   display: flex;
-  column-gap: 10px;
+  column-gap: 5px;
   border: 1px solid #dcdddd;
   padding: 15px;
   border-radius: 5px;
